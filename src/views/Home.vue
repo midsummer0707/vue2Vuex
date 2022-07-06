@@ -1,17 +1,26 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld :msg="massage" />
+    <el-button type="primary" @click="$router.push('/test')">
+      调整测试页
+    </el-button>
   </div>
 </template>
 
 <script>
+import route from 'vue-router'
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     HelloWorld
+  },
+  data(){
+    return{
+      massage:"2022年 7月 6 日"
+    }
   }
-}
+};
 </script>
