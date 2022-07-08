@@ -2,17 +2,17 @@
 <template>
   <div>
     <h1>{{ game }}-{{ gamesname }}</h1>
-    <el-tag>getter-{{ getterName }}</el-tag>
+    <el-tag >getter-{{ getterName }}</el-tag>
 
     <el-tag type="danger">{{ content }}</el-tag>
 
     <el-divider></el-divider>
-    <el-button @click="handleMutation">提交Mutation</el-button>
-    <el-button @click="handleMutationSecond" type="primary"
+    <el-button @click="handleMutation" v-waves>提交Mutation</el-button>
+    <el-button @click="handleMutationSecond" v-waves type="primary"
       >第二次提交Mutation</el-button
     >
 
-    <el-button @click="doAction" type="info">战斗打响</el-button>
+    <el-button @click="doAction" type="info" v-waves>战斗打响</el-button>
   </div>
 </template>
 
