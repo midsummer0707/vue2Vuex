@@ -10,5 +10,15 @@ export default {
         setTimeout(() => {
             context.commit("methodGender", payload);
         }, 5000)
+    },
+
+    setBookAction(context, val) {
+        context.commit('handleSecondBook', val)
+    }
+
+    ,
+    setStoryAction(context, payload) {
+        context.commit("setSecondGame", payload)
+
     }
 }

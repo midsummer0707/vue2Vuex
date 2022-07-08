@@ -25,6 +25,24 @@ export default {
 
     methodGender(state, payload) {
         state.surname = payload.newSurname
+    },
+
+    handleFirstBook(state, val) {
+        state.firstBook = "这是一本教育意义的书籍:" + val
+    },
+    handleSecondBook(state, val) {
+        state.secondBook = val + "你知道其他的生肖吗? 比如:鼠,牛,虎..."
+    },
+
+    setMyGames(state, payload) {
+        state.game = payload.newSetName
+    },
+
+
+    setSecondGame(state, payload) {
+        state.content = payload.changeContent
     }
+
+
 
 }
